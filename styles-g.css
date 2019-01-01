@@ -1,0 +1,121 @@
+* {
+	font-family: "Source Sans Pro", "ZephText", "Brill", system-ui, -apple-system, BlinkMacSystemFont;
+	padding: 0;
+	margin: 0;
+	font-size: calc(24px + (32 - 24) * ((100vw - 750px) / (1600 - 750)));
+}
+
+body {
+	background-color: #f1f0f0;
+}
+
+p {
+	line-height: calc(36px + (44 - 36) * ((100vw - 750px) / (1600 - 750)));
+	position: relative;
+}
+
+p::before {
+	position: absolute;
+	left: -5rem;
+	font-size: .6rem;
+	bottom: -3px;
+	color: #000000;
+	content: attr(data-ln);
+	width: 3rem;
+	font-feature-settings: "lnum", "tnum";
+	text-align: right;
+	text-indent: 0;
+	opacity:0.2;
+}
+
+p:hover::before {
+	opacity:1;
+	font-weight:bold;
+	color: #CA1E47;
+}
+
+#container span:hover {
+	border-bottom: 3px dotted #CA1E47;
+	color: #CA1E47;
+}
+
+.indent {
+	text-indent: 1.5rem;
+}
+
+.center {
+	text-align: center;
+}
+
+.entry{
+	font-weight: bold;
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+}
+
+em {
+	font-style: italic;
+	font-size: inherit;
+}
+
+.smallcaps {
+	font-feature-settings: 'c2sc', 'smcp', 'onum', 'pnum';
+}
+
+#centerer {
+	box-sizing: border-box;
+	top:0;
+	left:0;
+	height:4.5rem;
+	padding: .75rem 0 .75rem 30px;
+	background-color: #d5f2fa;
+	box-shadow: -2px 2px 2px 0px #133441;
+	position: -webkit-sticky;
+	position: sticky;
+	overflow: hidden;
+	z-index: 250;
+}
+ul{
+	list-style-type: none;
+	line-height: 1.1rem;
+	/* overflow-x: hidden; */
+	margin: auto;
+	color: #213450;
+	width: 24rem;
+	padding-left: 25px;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 1.1rem;
+	line-height: 1.2rem;
+	padding: 30px 25px 25px 0;
+	background-color:#213450;
+	color: #ffffff;
+	text-align: center;
+}
+
+#container {
+	margin: 60px auto 150px;
+	width: 28rem;
+}
+
+section {
+	padding: 25px 30px 40px;
+	/* margin-left: 3rem; */
+	background-color: #ffffff;
+}
+
+section+section {
+	margin-top: 75px;
+}
+
+h1+section {
+	margin-top: 20px;
+}
+
+.elegiac:nth-child(odd){
+	text-indent:1.5rem;
+}
+
+/* .infoboxGreek{font-family: "ZephText";} */
