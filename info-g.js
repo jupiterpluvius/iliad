@@ -3,6 +3,8 @@ const tagCatalog = [
 	"postag": "pos",
 	"elements": [
 	{"value": "v", "expanded": "verb"}, 
+	{"value": "l", "expanded": "article"}, 
+	{"value": "g", "expanded": "particle"}, 
 	{"value": "n", "expanded": "noun"}, 
 	{"value": "a", "expanded": "adjective"}, 
 	{"value": "p", "expanded": "pron."}, 
@@ -27,6 +29,7 @@ const tagCatalog = [
 	"elements": [
 	{"value": "-", "expanded": " "}, 
 	{"value": "s", "expanded": "sg."}, 
+	{"value": "d", "expanded": "du."}, 
 	{"value": "p", "expanded": "pl."}
 	]
 },
@@ -110,7 +113,7 @@ function doPOS(tag) {
 
 			}
 		}};
-		if (tag[0] === "n" || tag[0] === "a" || tag[0] === "p" || tag[0] === "m") {
+		if (tag[0] === "n" || tag[0] === "a" || tag[0] === "p" || tag[0] === "m" || tag[0] === "l") {
 			answer = (wordPos[7] + " " + wordPos[2] + " " + wordPos[6] + " " + wordPos[8]);
 	} else if (tag[4] === "p") { // participle: 
 		answer = (wordPos[3] + " " + wordPos[5] + " " + wordPos[4] + ", " + wordPos[7] + " " + wordPos[2] + " " + wordPos[6]);
