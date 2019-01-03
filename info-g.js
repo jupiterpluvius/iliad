@@ -54,9 +54,6 @@ const tagCatalog = [
 	{"value": "n", "expanded": "inf."}, 
 	{"value": "s", "expanded": "subj."}, 
 	{"value": "m", "expanded": "imperat."}, 
-	{"value": "d", "expanded": "gerund"}, 
-	{"value": "g", "expanded": "gerundive"}, 
-	{"value": "@", "expanded": "supine"}, 
 	{"value": "p", "expanded": "ppl."}
 	]
 },
