@@ -53,6 +53,7 @@ const tagCatalog = [
 	{"value": "i", "expanded": "ind."}, 
 	{"value": "n", "expanded": "inf."}, 
 	{"value": "s", "expanded": "subj."}, 
+	{"value": "o", "expanded": "opt."}, 
 	{"value": "m", "expanded": "imperat."}, 
 	{"value": "p", "expanded": "ppl."}
 	]

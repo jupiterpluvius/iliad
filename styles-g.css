@@ -39,6 +39,8 @@ p:hover::before {
 	color: #CA1E47;
 }
 
+span {cursor: pointer}
+
 .indent {
 	text-indent: 1.5rem;
 }
